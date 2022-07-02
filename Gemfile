@@ -13,7 +13,10 @@ end
 
 group :production do
   gem 'pg'
+  gem 'fog-aws'
 end
+
+gem 'figaro'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
