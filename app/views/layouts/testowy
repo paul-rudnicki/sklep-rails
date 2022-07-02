@@ -1,0 +1,12 @@
+<li <% if [params[:controller], params[:action]] == ['statics', 'privacy'] %>class="active nav-item">
+                    <%= link_to 'Polityka prywatności', privacy_path, class: 'nav-link' %>
+                  </li>
+                  <li <% if [params[:controller], params[:action]] == ['statics', 'terms'] %>class="active nav-item">
+                    <%= link_to 'Regulamin', terms_path, class: 'nav-link' %>
+                  </li>
+                  <li <% if [params[:controller], params[:action]] == ['statics', 'shipping'] %>class="active nav-item">
+                    <%= link_to 'Dostawa i płatności', shipping_path, class: 'nav-link' %>
+                  </li>
+                  <li <% if [params[:controller], params[:action]] == ['statics', 'about'] %>class="active nav-item">
+                    <%= link_to 'O sklepie', about_path, class: 'nav-link' %>
+                  </li>
